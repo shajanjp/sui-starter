@@ -178,27 +178,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/visibility.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/sidebar.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/transition.js"></script>
-  <script>
-    $(document)
-    .ready(function() {
-
-      // fix menu when passed
-      $('.masthead')
-      .visibility({
-        once: false,
-        onBottomPassed: function() {
-          $('.fixed.menu').transition('fade in');
-        },
-        onBottomPassedReverse: function() {
-          $('.fixed.menu').transition('fade out');
-        }
-      });
-
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-      .sidebar('attach events', '.toc.item');
-
-    });
-  </script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
